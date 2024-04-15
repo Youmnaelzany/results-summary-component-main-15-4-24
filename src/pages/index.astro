@@ -6,38 +6,162 @@ import "@/styles/globals.css";
 <Layout title="Frontend Mentor | Results summary component">
   <main class="lg:my-[17.75rem] flex justify-center items-center lg:mx-auto">
     <section
-      class="lg:w-[46rem] lg:h-[32rem] w-[23.44rem] h-[50.5625rem] flex flex-col lg:flex-row"
+      class="lg:w-[46rem] lg:h-[32rem] w-[23.44rem] h-[50.5625rem] flex flex-col lg:flex-row bg-white lg:rounded-[2rem]"
     >
+      <!-- Result Card -->
       <div
         class="w-[23.44rem] lg:w-[23rem] h-[22.25rem] card-one rounded-b-[2rem] lg:rounded-[2rem] lg:h-[32rem] flex flex-col items-center text-center pt-6 pb-10 lg:pt-[2.37rem] lg:pb-[3.44rem]"
       >
+        <!-- Result Title -->
         <h1
           class="text-[#CAC9FF] font-bold leading-normal text-lg lg:text-2xl mb-6 lg:mb-[2.19rem]"
         >
           Your Result
         </h1>
+        <!-- Result Circle Wrapper -->
         <div
           class="size-[8.75rem] rounded-full oval lg:size-[12.5rem] lg:mb-[1.75rem] mb-6 flex flex-col justify-center items-center"
         >
+          <!-- 76 -->
           <h2
             class="text-white font-extrabold text-[3.5rem] leading-[4.5rem] lg:text-7xl"
           >
             76
           </h2>
+          <!-- Of 100 -->
           <h3
             class="text-[#CAC9FF] opacity-[0.5168] text-base font-bold leading-normal lg:text-lg"
           >
             of 100
           </h3>
         </div>
+        <!-- Result Text -->
         <div class="flex flex-col items-center gap-2">
+          <!-- Great Title -->
           <h2 class="text-2xl text-white font-bold leading-normal">Great</h2>
+          <!-- Result Paragraph -->
           <p
             class="text-[#CAC9FF] text-base font-medium leading-normal lg:text-lg w-[16.25rem]"
           >
             Your performance exceed 65% of the people conducting the test here!
           </p>
         </div>
+      </div>
+      <!-- Summarry Card -->
+      <div
+        class="w-[23.44rem] lg:w-[23rem] lg:h-[32rem] flex flex-col h-[28.31rem] bg-white lg:rounded-r-[2rem]"
+      >
+        <!-- Summary Title -->
+        <h2
+          class="mx-8 my-6 lg:ml-10 lg:mt-[2.37rem] lg:mb-[1.75rem] text-[#303B59] text-lg leading-normal font-bold lg:text-2xl"
+        >
+          Summary
+        </h2>
+        <!-- Boxs Wrapper -->
+        <div class="mx-[1.88rem] flex flex-col items-center gap-4 lg:mx-10">
+          <!-- Red Box -->
+          <div
+            class="w-[19.6875rem] h-14 lg:w-[18rem] rounded-xl red-box px-4 py-[1.06rem] flex justify-between items-center"
+          >
+            <div class="flex items-center gap-3">
+              <img
+                src="/public/images/icon-reaction.svg"
+                alt="icon-reaction"
+                class=""
+              />
+              <h3
+                class="text-[#FF5555] font-medium leading-normal text-base lg:text-lg"
+              >
+                Reaction
+              </h3>
+            </div>
+            <div class="">
+              <h3
+                class="text-[#303B59] text-base font-bold leading-normal lg:text-lg"
+              >
+                80 <span class="opacity-50">/ 100</span>
+              </h3>
+            </div>
+          </div>
+          <!-- Yellow Box -->
+          <div
+            class="w-[19.6875rem] h-14 lg:w-[18rem] rounded-xl yellow-box px-4 py-[1.06rem] flex justify-between items-center"
+          >
+            <div class="flex items-center gap-3">
+              <img
+                src="/public/images/icon-memory.svg"
+                alt="icon-memory"
+                class=""
+              />
+              <h3
+                class="text-[#FFB21E] font-medium leading-normal text-base lg:text-lg"
+              >
+                Memory
+              </h3>
+            </div>
+            <div class="">
+              <h3
+                class="text-[#303B59] text-base font-bold leading-normal lg:text-lg"
+              >
+                92 <span class="opacity-50">/ 100</span>
+              </h3>
+            </div>
+          </div>
+          <!-- Green Box -->
+          <div
+            class="w-[19.6875rem] h-14 lg:w-[18rem] rounded-xl green-box px-4 py-[1.06rem] flex justify-between items-center"
+          >
+            <div class="flex items-center gap-3">
+              <img
+                src="/public/images/icon-verbal.svg"
+                alt="icon-verbal"
+                class=""
+              />
+              <h3
+                class="text-[#00BB8F] font-medium leading-normal text-base lg:text-lg"
+              >
+                Verbal
+              </h3>
+            </div>
+            <div class="">
+              <h3
+                class="text-[#303B59] text-base font-bold leading-normal lg:text-lg"
+              >
+                61 <span class="opacity-50">/ 100</span>
+              </h3>
+            </div>
+          </div>
+          <!-- Blue Box -->
+          <div
+            class="w-[19.6875rem] h-14 lg:w-[18rem] rounded-xl blue-box px-4 py-[1.06rem] flex justify-between items-center"
+          >
+            <div class="flex items-center gap-3">
+              <img
+                src="/public/images/icon-visual.svg"
+                alt="icon-visual"
+                class=""
+              />
+              <h3
+                class="text-[#1125D6] font-medium leading-normal text-base lg:text-lg"
+              >
+                Visual
+              </h3>
+            </div>
+            <div class="">
+              <h3
+                class="text-[#303B59] text-base font-bold leading-normal lg:text-lg"
+              >
+                73 <span class="opacity-50">/ 100</span>
+              </h3>
+            </div>
+          </div>
+        </div>
+        <!-- Continue Button  -->
+        <button
+          type="button"
+          class="mt-6 mx-[1.87rem] mb-[1.87rem] w-[19.6875rem] h-14 bg-[#303B59] rounded-[8rem] text-white text-lg font-bold leading-normal cursor-pointer btn transition-colors duration-500 ease-in-out lg:mx-10 lg:mt-[2.56rem] lg:mb-[2.88rem]"
+          >Continue</button
+        >
       </div>
     </section>
   </main>
@@ -47,11 +171,12 @@ import "@/styles/globals.css";
   body {
     background-color: #ecf2ff;
   }
-  .card-one {
-    background: linear-gradient(180deg, #75f 0%, #6943ff 0.01%, #2f2ce9 100%);
-  }
   section {
     box-shadow: 0px 30px 60px 0px rgba(61, 108, 236, 0.15);
+  }
+
+  .card-one {
+    background: linear-gradient(180deg, #75f 0%, #6943ff 0.01%, #2f2ce9 100%);
   }
   .oval {
     background: linear-gradient(
@@ -60,5 +185,41 @@ import "@/styles/globals.css";
       rgba(37, 33, 201, 0) 100%,
       rgba(37, 33, 201, 0) 100%
     );
+  }
+  .red-box {
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.95) 0%,
+        rgba(255, 255, 255, 0.95) 100%
+      ),
+      #f55;
+  }
+  .yellow-box {
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.95) 0%,
+        rgba(255, 255, 255, 0.95) 100%
+      ),
+      #ffb21e;
+  }
+  .green-box {
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.95) 0%,
+        rgba(255, 255, 255, 0.95) 100%
+      ),
+      #00bb8f;
+  }
+  .blue-box {
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.95) 0%,
+        rgba(255, 255, 255, 0.95) 100%
+      ),
+      #1125d6;
+  }
+
+  .btn:hover {
+    background: linear-gradient(180deg, #75f 0%, #6943ff 0.01%, #2f2ce9 100%);
   }
 </style>
